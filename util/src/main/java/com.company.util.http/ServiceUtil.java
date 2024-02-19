@@ -19,6 +19,7 @@ public class ServiceUtil {
     @Autowired
     public ServiceUtil(@Value("${server.port}") String port) {
         this.port = port;
+        System.out.println("I'm here HELLO!!!!" + port);
     }
 
     public String getServiceAddress() {
